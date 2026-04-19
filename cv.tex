@@ -1,108 +1,108 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Template Author: Jitin Nair
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
+\documentclass[11pt,a4paper]{article}
 
-\documentclass[a4paper,12pt]{article}
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES
-%----------------------------------------------------------------------------------------
-
-\usepackage{url}
-\usepackage{parskip}
-\RequirePackage{color}
-\RequirePackage{graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
-\usepackage{tabularx}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor} % FIXED
 \usepackage{enumitem}
-\usepackage{supertabular}
 \usepackage{titlesec}
-\usepackage{multicol}
-\usepackage{multirow}
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
-\usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 
-%----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
-%----------------------------------------------------------------------------------------
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=linkcolour,
+    linkcolor=linkcolour
+}
+
+\titleformat{\section}{\bfseries}{}{0em}{}[\titlerule]
 
 \begin{document}
 
-\pagestyle{empty}
+\begin{center}
+{\Large\bfseries \textit{Curriculum Vitae}}
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent
+{\Large Arush Khasru}
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+\section*{Personal Details}
 %----------------------------------------------------------------------------------------
 
-\begin{tabularx}{\linewidth}{@{} c @{}}
-\Huge{Arush Khasru} \\[7.5pt]
-\href{https://github.com/ArushKhasru}{GitHub: ArushKhasru} \ $|$ \  
-\href{https://linkedin.com/in/arush-khasru}{LinkedIn: arush-khasru} \ $|$ \   
-\href{mailto:arushku23@gmail.com}{Email: arushku23@gmail.com} \ $|$ \  
-\href{tel:+919882009711}{Phone: +91-9882009711} \\
-\end{tabularx}
+\noindent
+\begin{tabular}{@{} l l @{}}
+Nationality & : Indian \\
+Email       & : \href{mailto:arushku23@gmail.com}{arushku23@gmail.com} \\
+Phone       & : +91-9882009711 \\
+GitHub      & : \href{https://github.com/ArushKhasru}{github.com/ArushKhasru} \\
+LinkedIn    & : \href{https://linkedin.com/in/arush-khasru}{linkedin.com/in/arush-khasru} \\
+\end{tabular}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+\section*{Educational Qualifications}
+
+\noindent
+\begin{tabular}{@{} l r @{}}
+$\bullet$ Master of Computer Applications (MCA) \hspace{14em} (2024 -- Present) \\
+\multicolumn{2}{@{}l}{\hspace{1em} - Central University of Himachal Pradesh} \\
+
+$\bullet$ B.Sc. (Physics, Computer Science, Mathematics) \hspace{11.5em}(2021 -- 2024) \\
+\multicolumn{2}{@{}l}{\hspace{1em} - Govt. PG College Una} \\
+\multicolumn{2}{@{}l}{\hspace{1em} - CGPA: 6.21/10} \\
+\end{tabular}
 %----------------------------------------------------------------------------------------
-\section{Education}
-\textbf{Master of Computer Applications (MCA)} \hfill 2024 -- Present
+\section*{Exams Qualified}
+%----------------------------------------------------------------------------------------
+
 \begin{itemize}[leftmargin=*]
-    \item Central University of Himachal Pradesh, India
+    \item Qualified UGC NET (Computer Science), December 2025 \\
+     - Eligible for Assistant Professor and PhD Admission
 \end{itemize}
 
-\textbf{Bachelor of Science (B.Sc.) in Physics, Computer-Science, Mathematics} \hfill 2021 -- 2024
+%----------------------------------------------------------------------------------------
+\section*{Major Projects}
+%----------------------------------------------------------------------------------------
+
 \begin{itemize}[leftmargin=*]
-    \item Government Post Graduate College Una (Affiliated to Himachal Pradesh University), India
-    \item CGPA: 6.21/10
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-%	EXAMS QUALIFIED
-%----------------------------------------------------------------------------------------
-
-\section{Exams Qualified}
-\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    \item Qualified UGC NET (Computer Science), December 2025 – Eligible for Assistant Professor and PhD Admission
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-%	MAJOR PROJECTS
-%----------------------------------------------------------------------------------------
-
-\section{Major Projects}
-\begin{itemize}[leftmargin=1em, itemsep=6pt]
     \item \textbf{BakBak 2.0} (\href{https://bak-bak-2-0.vercel.app}{Live Demo}) -- Real-time community and direct-messaging platform built with Next.js 16, React 19, Clerk authentication, Stream Chat, and Tailwind CSS.
+
     \item \textbf{CUHP Devs} (\href{https://cuhp-devs-web.vercel.app}{Live Demo}) -- Student developer community and coding-practice platform built as a Turborepo monorepo with Next.js, Express, Socket.IO, and MongoDB.
+
     \item \textbf{OpenEnv Bug Triage} (\href{https://huggingface.co/spaces/TheOnlyKaks/my-env}{Live Demo}) -- Python and FastAPI-based bug triage environment with Pydantic models, ticket classification, duplicate detection, and escalation workflows.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL SKILLS
+\section*{Technical Skills}
 %----------------------------------------------------------------------------------------
 
-\section{Technical Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Programming Languages & Python, JavaScript, SQL, HTML, CSS, C \\
-Frontend & React, Next.js, Vite, HTML, CSS, JavaScript, Tailwind CSS, Redux \\
-Backend & Node.js, Socket.io, WebSocket, Express, Mongoose, Python, FastAPI \\
-Databases & MongoDB \\
-Tools & Git, Figma, Postman, Turborepo, npm \\
-Core Concepts & REST APIs, JWT Authentication, Real-Time Systems, Object-Oriented Programming, Data Structures and Algorithms \\
-\end{tabularx}
+\noindent
+\begin{tabular}{@{} l l @{}}
+Programming Languages & : Python, JavaScript, SQL, HTML, CSS, C \\
+Frontend              & : React, Next.js, Vite, Tailwind CSS, Redux \\
+Backend               & : Node.js, Express, Socket.IO, FastAPI, Mongoose \\
+Databases             & : MongoDB, MySQL \\
+Tools                 & : Git, Github, Figma, Postman, npm \\
+Core Concepts         & : REST APIs, JWT Authentication, Real-Time Systems, OOP, DSA \\
+\end{tabular}
 
-%----------------------------------------------------------------------------------------
-%	FOOTER
-%----------------------------------------------------------------------------------------
+% %----------------------------------------------------------------------------------------
+% \section*{Areas of Interest}
+% %----------------------------------------------------------------------------------------
 
-\vfill
-\center{\footnotesize Last updated: \today}
+% Full-Stack Web Development, Real-Time Systems, API Design, Open-Source Development, Developer Communities, Cloud Deployment
+
+% %----------------------------------------------------------------------------------------
+% \section*{Summary}
+% %----------------------------------------------------------------------------------------
+
+% Motivated MCA student with a strong foundation in full-stack web development, real-time systems, and software engineering. Experienced in building production-ready applications using modern JavaScript frameworks and Python. Passionate about developer communities, open-source collaboration, and contributing positively to the technology ecosystem.
+
+% \vfill
+\begin{center}
+    \footnotesize 
+\end{center}
 
 \end{document}
