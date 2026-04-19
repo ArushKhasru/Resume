@@ -2,9 +2,12 @@
 
 This repository contains my CV in LaTeX format.
 
-## View CV
+## CV Preview
 
-- **PDF version:** [Open CV](./cv.pdf)
-- **LaTeX source:** [cv.tex](./cv.tex)
+<iframe src="./cv.pdf" width="100%" height="900px"></iframe>
 
-> GitHub can preview `cv.pdf` directly in the browser.
+If the embedded preview does not load, open it directly: **[Open CV PDF](./cv.pdf)**.
+
+## Source
+
+- [cv.tex](./cv.tex)
